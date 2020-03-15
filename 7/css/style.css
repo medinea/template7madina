@@ -1,0 +1,459 @@
+header {
+    background-image: url(../img/Blog_title_image.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+body {
+    height: 10000px
+}
+
+ul li a {
+    color: rgba(255, 255, 255, .85);
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+    transition: .5s all ease;
+}
+
+ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+header .container1 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.icon a {
+    color: #9396a5;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#fixedMenu {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    z-index: 1;
+    box-shadow: -10px 0px 20px 2px rgba(0, 0, 0, .06);
+}
+
+#fixedMenu li:hover a {
+    color: #294cff;
+
+}
+
+#fixedMenu li:hover a {
+    background-color: #f3f5fd;
+}
+
+#button button {
+    border: 1px solid #e6e6e6;
+    color: #8d8d8d;
+    border-radius: 100px;
+    padding: 6px 15px;
+    font-family: 'Montserrat';
+    transition: .4s all ease;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#button button:hover {
+    background-color: #47c9e5;
+    color: white;
+}
+
+.card1 img {
+    width: 100%;
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+
+.card1 span {
+    font-size: 14px;
+    color: #8d8d8d;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+}
+
+.card1-text {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.card1 h3 {
+    color: #3f3f3f;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+    transition: .4s all ease;
+}
+
+.card1 p {
+    font-family: 'Montserrat';
+    color: #8d8d8d;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.card1 h3:hover {
+    color: #47c9e5;
+}
+
+.card1-icon p {
+    border-top: 1px solid #e9e9e9;
+    width: 70%;
+    padding-top: 30px;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.card1-icon span i {
+    background-color: #f6f6f6;
+    color: #8d8d8d;
+    border: 1px solid #f6f6f6;
+    border-radius: 100px;
+    font-size: 14px;
+    padding: 12px 20px;
+    transition: .4s all ease;
+}
+
+.card1-icon span {
+    margin-right: 0;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.card1-icon span:hover i {
+    background-color: #47c9e5;
+    color: white;
+}
+
+.card1 {
+    box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, .2);
+    transition: .3s all ease;
+    border: 2px solid #e9e9e9;
+}
+
+.card1:hover {
+    box-shadow: none;
+    border: 1px solid #e9e9e9;
+}
+
+.card1-img:hover img{
+    transform: scale(1.1);
+}
+
+.card1-img:hover .overlay {
+  visibility: visible;
+}
+
+.card1-img:hover .img-icon{
+    visibility: visible;
+}
+
+.card1-img {
+    position: relative;
+    transition: .4s all ease;
+    overflow: hidden;
+}
+
+.img-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:10;
+    visibility: hidden;
+}
+.img-icon i{
+    background-color: white;
+    color: #8d8d8d;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+    box-shadow: -10px 0px 20px 2px rgba(0, 0, 0, .06);
+    cursor: pointer;   
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(71,201,229,.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   visibility: hidden;
+   transition: .2s all ease;
+}
+
+.latest-img img{
+    border:1px solid transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.latest-img{
+    position: relative;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+} 
+.latest h5, .popular h5{
+    color: #3f3f3f;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.latest-text p{
+    display: inline-block;
+    color: #8d8d8d;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    margin-bottom: 5px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+}
+.latest-text p:hover{
+    color: #47c9e5;;
+}
+.latest-text h6{
+    cursor: pointer;
+    color: #3f3f3f;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+}
+.latest-img:hover .overlay1{
+    visibility: visible;
+    border-radius: 50%;
+}
+.overlay1{
+    position: absolute;
+    background-color: rgba(71,201,229,.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   visibility: hidden;
+   transition: .2s all ease-in-out;
+   border-radius: 50%;
+}
+
+.latest-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:10;
+    visibility: hidden;
+    transition: .2s all ease-in-out;
+}
+.latest-icon i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;   
+}
+.latest-img:hover .latest-icon{
+    visibility: visible;
+}
+.latest{
+    border-bottom:1px solid #e9e9e9;
+    width: 90%
+}
+
+.latest-col2 img{
+    width: 100%;
+}
+
+label input{
+    border: 1px solid #ddd;
+    color: #8d8d8d;
+    border-width: 0;
+    box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);
+    padding: 16px 74px 16px 26px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    outline: none;
+    width: 90%;
+}
+label i{
+    background-color:#f0f0f0;
+    color: #8d8d8d;
+    padding: 19px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);
+}
+.buttons button{
+    color: #8d8d8d;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    padding: 0 12px;
+    line-height: 32px;
+    border: 1px solid #f4f4f4;
+    transition: .3s all ease-in-out;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background-color: #f4f4f4;
+    outline: none;
+}
+.buttons{
+    width: 80%;
+}
+.buttons button:hover{
+    color: white;
+    background-color: #47c9e5;
+    border-color: #47c9e5;
+}
+
+#foot{
+    background-color: #262626;
+    padding: 100px 0;
+}
+.foot-card p{
+    color: #e3e3e3;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+}
+.foot-card i{
+    color: white;
+    font-size: 18px;
+    padding-right: 25px;
+}
+
+.recent-img img{
+    border:1px solid transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.recent-img{
+    position: relative;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+} 
+.recent-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:2;
+    visibility: hidden;
+    transition: .2s all ease-in-out;
+}
+.recent-icon i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;   
+}
+.recent-img:hover .recent-icon{
+    visibility: visible;
+}
+.recent{
+    border-bottom:1px solid rgba(255,255,255,0.10);
+  
+}
+
+.recent-text p{
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    margin-bottom: 5px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+}
+.recent-text p:hover{
+     color: #3f3f3f;
+}
+.recent-text h6{
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    transition: .3s all ease-in-out;
+}
+.recent-img:hover .overlay1{
+    visibility: visible;
+    border-radius: 50%;
+}
+.recent h5,.tag h5
+{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.recent h6:hover{
+    color:#47c9e5;
+}
+
+.tags button{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    padding: 0 12px;
+    line-height: 32px;
+    border: 1px solid #3a3a3a;
+    transition: .3s all ease-in-out;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: #3a3a3a;
+    outline: none;
+}
+
+.tags button:hover{
+    color: white;
+    background-color: #47c9e5;
+    border-color: #47c9e5;
+}
+#footer{
+    background-color:#222222;
+
+}
+#footer p{
+    color:white;
+    font-size: 14px;
+    margin: 0;
+}
+.container1
